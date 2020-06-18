@@ -1262,7 +1262,7 @@ You could try to send a message for help.
                 Correct!\
             &lt;&lt;/replace&gt;&gt;
             &lt;&lt;replace &#39;#textbox-submit&#39;&gt;&gt;\
-                [[Enter Vault]]\
+                [[Enter Vault|vernichtung]]\
             &lt;&lt;/replace&gt;&gt;
             &lt;&lt;run $(&#39;#textbox-answer&#39;).attr(&#39;readonly&#39;, &#39;true&#39;);&gt;&gt;
             /% prevent the textbox from being edited any further %/
@@ -1581,7 +1581,7 @@ Do you want the code?
 [[What about Malcome]]
 
 &lt;/div&gt; 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="158" name="vernichtung" tags="" position="3754,5038" size="100,100">&lt;&lt;audio airraid play&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="158" name="vernichtung" tags="" position="3759,5008" size="100,100">&lt;&lt;audio airraid play&gt;&gt;
 You enter the vault, instantly you hear the sirens going off. Your not sure whats happening, is that an alarm? Are you now in trouble?
 
 
@@ -1802,12 +1802,12 @@ Is there anyone there.
 
 
 
-&lt;&lt;set $counter += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="177" name="Enter Vault" tags="" position="3754,4918" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="178" name="helicopter" tags="" position="3347,5929" size="100,100">You run outside into a large open area. You make a large SOS sign on the floor to make it easier to be spotted.
+&lt;&lt;set $counter += 1&gt;&gt;</tw-passagedata><tw-passagedata pid="177" name="helicopter" tags="" position="3347,5929" size="100,100">You run outside into a large open area. You make a large SOS sign on the floor to make it easier to be spotted.
 
 After a short wait you see the Helicopter come into view. It soon lands in front of you.
 The doors open and you hurry to get in, you put on the seat belt while a medic checks you over. Very shortly your takin off and carried back to [[Safety|End Screen]] .
 
-</tw-passagedata><tw-passagedata pid="179" name="End Screen" tags="" position="8493,7750" size="100,100">&lt;&lt;set $life +=1&gt;&gt;
+</tw-passagedata><tw-passagedata pid="178" name="End Screen" tags="" position="8493,7750" size="100,100">&lt;&lt;set $life +=1&gt;&gt;
 Congratuations. You have made it back to Camp. Why not have another go and take a different path, make different choices
 Before closing the game please click End Screen to see some notes from the creator
 
@@ -1836,11 +1836,11 @@ Before closing the game please click End Screen to see some notes from the creat
 &lt;&lt;audio cavewind stop&gt;&gt;
 &lt;&lt;audio morse stop&gt;&gt;
 &lt;&lt;audio airraid stop&gt;&gt;
-&lt;&lt;audio maze stop&gt;&gt;</tw-passagedata><tw-passagedata pid="180" name="good" tags="" position="4692,5790" size="100,100">You decided there is a risk. Your at the bottom of a valley after heavy rainfall. You can see dust in the air and plenty of running water down thr rock wall.
+&lt;&lt;audio maze stop&gt;&gt;</tw-passagedata><tw-passagedata pid="179" name="good" tags="" position="4692,5790" size="100,100">You decided there is a risk. Your at the bottom of a valley after heavy rainfall. You can see dust in the air and plenty of running water down thr rock wall.
 
 Your aware this can cause a landslide. 
 
-You decide to [[wait|landslidegood]]</tw-passagedata><tw-passagedata pid="181" name="Bad" tags="" position="5445,6191" size="100,100">&lt;&lt;audio rockfall2 play&gt;&gt;
+You decide to [[wait|landslidegood]]</tw-passagedata><tw-passagedata pid="180" name="Bad" tags="" position="5445,6191" size="100,100">&lt;&lt;audio rockfall2 play&gt;&gt;
 
 You have seen all the warning signs but didnt pay any attention to it. You casully stroll through the valley when the worse happens.
 
@@ -1849,7 +1849,7 @@ Lots of rocks start falling down both in from of you and behind you.
 You have no choice, you have to run. You can either
 
 
-[[run forwards]] or [[Run backwards.]]</tw-passagedata><tw-passagedata pid="182" name="landslidegood" tags="" position="4158,5885" size="100,100">&lt;&lt;audio rockfall2 play&gt;&gt;
+[[run forwards]] or [[Run backwards.]]</tw-passagedata><tw-passagedata pid="181" name="landslidegood" tags="" position="4158,5885" size="100,100">&lt;&lt;audio rockfall2 play&gt;&gt;
 Suddenly and without warning your hearing is filled with the sound of rocks. You look up to see what looks like half the mountain is falling down. Luckily you decided to wait.
 Dust is everywhere, you can no longer see whats in front of you. You start to cough with the dust hitting your lungs.
 
@@ -1858,16 +1858,16 @@ Eventually the noise stops, the dust settles but the valley is now full of debri
 You decide to carefully make you way through the valley now that its all over.
 
 [[Go on]]
-</tw-passagedata><tw-passagedata pid="183" name="Go on" tags="" position="4515,6570" size="100,100">You slowly walk over the rubble left in the valley, listening for any signs of falling rocks.
+</tw-passagedata><tw-passagedata pid="182" name="Go on" tags="" position="4515,6570" size="100,100">You slowly walk over the rubble left in the valley, listening for any signs of falling rocks.
 You keep glancing up incase more rocks start to fall. 
 Its slow going but you sucessfully manage to get the the [[other side|move forward]]
-&lt;&lt;audio rockfall2 stop&gt;&gt;</tw-passagedata><tw-passagedata pid="184" name="Valley Walk" tags="" position="5113,4318" size="100,100">You decide to go straight. The walk is fairly easy. Hopefuly the rest of the journey can be this easy. How hard can it be?
+&lt;&lt;audio rockfall2 stop&gt;&gt;</tw-passagedata><tw-passagedata pid="183" name="Valley Walk" tags="" position="5113,4318" size="100,100">You decide to go straight. The walk is fairly easy. Hopefuly the rest of the journey can be this easy. How hard can it be?
 
 As you turn the corner of the path, in front of you is a large valley. You have no option but to go through it.
 
 [[Go towards the valley|Forrest path]] 
 
-&lt;&lt;set $valley to true&gt;&gt;</tw-passagedata><tw-passagedata pid="185" name="run forwards" tags="" position="5538,6456" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $valley to true&gt;&gt;</tw-passagedata><tw-passagedata pid="184" name="run forwards" tags="" position="5538,6456" size="100,100">&lt;&lt;nobr&gt;&gt;
     &lt;&lt;switch random(1,6)&gt;&gt;
     &lt;&lt;case 1 2 3 &gt;&gt;
        You quickly start to sprint forwards, rocks are landing all around you, luckily you have only been hot by the smaller rocks so far. Your hurt and bleeding but still very much alive.
@@ -1886,7 +1886,7 @@ This is a sprint for your life, you have no option but to continue, stopping is 
     &lt;&lt;/switch&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="186" name="Run backwards." tags="" position="5023,6221" size="100,100">&lt;&lt;nobr&gt;&gt;
+</tw-passagedata><tw-passagedata pid="185" name="Run backwards." tags="" position="5023,6221" size="100,100">&lt;&lt;nobr&gt;&gt;
     &lt;&lt;switch random(1,6)&gt;&gt;
     &lt;&lt;case 1 2 3 &gt;&gt;
        You quickly turn around and start to sprint back the way you came, rocks are landing all around you, luckily you have only been hot by the smaller rocks so far. Your hurt and bleeding but still very much alive.
@@ -1905,7 +1905,7 @@ This is a sprint for your life, you didnt think you had covered this much ground
     &lt;&lt;/switch&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="187" name="move forward" tags="" position="5083,6727" size="100,100">&lt;&lt;if $mount is true and $valley is true&gt;&gt; Your leave the forrest to early again. You keep picking the wrong path. Time to have another go. [[Enter Forrest]] 
+</tw-passagedata><tw-passagedata pid="186" name="move forward" tags="" position="5083,6727" size="100,100">&lt;&lt;if $mount is true and $valley is true&gt;&gt; Your leave the forrest to early again. You keep picking the wrong path. Time to have another go. [[Enter Forrest]] 
 &lt;&lt;elseif $mount is true&gt;&gt; You come out of the forrest unexpectedly. You thought it was bigger. As you look forward you see there is a valley but it has recently had a landslide. This must be the wrong way. You decide to go back into the forrest and try a different path.
 [[Go back in the forrest|Enter Forrest]] &lt;&lt;set $valley to true&gt;&gt;
 &lt;&lt;elseif $mount is false&gt;&gt; You see up ahead of you is a large Forrest. There is an opening that you can follow.
@@ -1916,7 +1916,7 @@ This is a sprint for your life, you didnt think you had covered this much ground
 
 &lt;&lt;/if&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="188" name="Enter Forrest" tags="" position="5040,7035" size="100,100">You enter the forrest via the path in fron of you. It gets dark as soon as you enter, there isnt much light getting through the canopy. Hopfully it doesnt get worse as you may get lost.
+</tw-passagedata><tw-passagedata pid="187" name="Enter Forrest" tags="" position="5040,7035" size="100,100">You enter the forrest via the path in fron of you. It gets dark as soon as you enter, there isnt much light getting through the canopy. Hopfully it doesnt get worse as you may get lost.
 
 Thankfully as you continue along the path the tree&#39;s thin out a bit and allows more daylight to hit the Forrest floor. You can see clearer now and start to feel better.
 
@@ -1924,7 +1924,7 @@ Suddenly you come to a junction, Which way will you go?
 
 &lt;img src=&quot;img/junction.png&quot; alt=&quot;junction&quot; style=&quot; width: 500px;&quot;/&gt;
 
-[[Left path]] or [[Right path|Mountain pass forrest]]</tw-passagedata><tw-passagedata pid="189" name="Left path" tags="" position="5393,7324" size="100,100">You follow the trail for what feels like hours, The sun is starting to set and your still in the forrest.
+[[Left path]] or [[Right path|Mountain pass forrest]]</tw-passagedata><tw-passagedata pid="188" name="Left path" tags="" position="5393,7324" size="100,100">You follow the trail for what feels like hours, The sun is starting to set and your still in the forrest.
 
 You have no option but to spend the night in here.
 
@@ -1932,7 +1932,7 @@ You have no option but to spend the night in here.
 &lt;&lt;elseif $Flint is false&gt;&gt;You have no way to start a fire, Its going to get cold tonight so you will need to find [[shelter]]
 &lt;&lt;/if&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="190" name="Mountain entrance" tags="" position="5807,7056" size="100,100">You enter the forrest via the path in front of you. It gets dark as soon as you enter, there isnt much light getting through the canopy. Hopfully it doesnt get worse as you may get lost.
+</tw-passagedata><tw-passagedata pid="189" name="Mountain entrance" tags="" position="5807,7056" size="100,100">You enter the forrest via the path in front of you. It gets dark as soon as you enter, there isnt much light getting through the canopy. Hopfully it doesnt get worse as you may get lost.
 
 Thankfully as you continue along the path the tree&#39;s thin out a bit and allows more daylight to hit the Forrest floor. You can see clearer now and start to feel better.
 
@@ -1940,7 +1940,7 @@ Suddenly you come to a junction, Which way will you go?
 
 &lt;img src=&quot;img/junction.png&quot; alt=&quot;junction&quot; style=&quot; width: 500px;&quot;/&gt;
 
-[[Left path|move forward]] or [[Right path|Left path]]</tw-passagedata><tw-passagedata pid="191" name="start fire" tags="" position="5158,7479" size="100,100">There are plenty of twigs in the area so you gather up a large pile alonmg with some larger branches for when its up and running.
+[[Left path|move forward]] or [[Right path|Left path]]</tw-passagedata><tw-passagedata pid="190" name="start fire" tags="" position="5158,7479" size="100,100">There are plenty of twigs in the area so you gather up a large pile alonmg with some larger branches for when its up and running.
 
 
 What 3 things does fire need to start?
@@ -1966,12 +1966,12 @@ Select 3 = &lt;&lt;set _fire to 0&gt;&gt;&lt;span id=&quot;fire&quot;&gt;&lt;&lt
 
 
 
-</tw-passagedata><tw-passagedata pid="192" name="shelter" tags="" position="5482,7466" size="100,100">You need to make a shelter before it gets dark and the temperature drops.
+</tw-passagedata><tw-passagedata pid="191" name="shelter" tags="" position="5482,7466" size="100,100">You need to make a shelter before it gets dark and the temperature drops.
 Your lucky as the area your in seems to have recently been cleared slightly leaving you with plenty of large branches to make the structure.
 
 &lt;&lt;if $fire is true&gt;&gt; Creating a fire is a great advantage in survival in the wild. Its time to [[start building]] your shelter.
 &lt;&lt;elseif $fire is false&gt;&gt;Not having a fire isnt going to kill you straight away. You really need to make a good shelter to survive the night. Its time to [[start building]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="193" name="firecheck" tags="" position="5149,7644" size="100,100">You picked
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="192" name="firecheck" tags="" position="5149,7644" size="100,100">You picked
 
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $Flame is true&gt;&gt;&lt;&lt;print &quot;Flame&quot;&gt;&gt;&lt;br&gt;&lt;&lt;/if&gt;&gt;
@@ -1984,12 +1984,12 @@ Are you sure?
 
 [[Yes|fire]]
 [[No|start fire]] 
-</tw-passagedata><tw-passagedata pid="194" name="fire" tags="" position="5149,7787" size="100,100">&lt;&lt;if $Heat is true and $Fuel is true and $Oxygen is true&gt;&gt;Well done thats correct. You succesfully start a fire, You use the dried leaves on the ground as your kindling then add the small sticks slowly until its big enough to start putting on the larger branches. Now its time to make a [[shelter]] incase it rains.
+</tw-passagedata><tw-passagedata pid="193" name="fire" tags="" position="5149,7787" size="100,100">&lt;&lt;if $Heat is true and $Fuel is true and $Oxygen is true&gt;&gt;Well done thats correct. You succesfully start a fire, You use the dried leaves on the ground as your kindling then add the small sticks slowly until its big enough to start putting on the larger branches. Now its time to make a [[shelter]] incase it rains.
 &lt;&lt;set $fire to true&gt;&gt;
 &lt;&lt;elseif $Air is true or $Flame is true&gt;&gt; Thats not quite right. You need Oxygen, Heat and Fuel to start any fire. Your unable to light a fire and soon give up trying. Your only option to stay warm is to try to build a 
 [[shelter]] 
 &lt;&lt;set $fire to false&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="195" name="start building" tags="" position="5482,7616" size="100,100">You only haver time to focus on 4 things while building the shelter. What do you want to focus on?
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="194" name="start building" tags="" position="5482,7616" size="100,100">You only haver time to focus on 4 things while building the shelter. What do you want to focus on?
 
 &lt;&lt;silently&gt;&gt;
 &lt;&lt;set $wind to false&gt;&gt;
@@ -2012,7 +2012,7 @@ Select 4 = &lt;&lt;set _shelter to 0&gt;&gt;&lt;span id=&quot;shelter&quot;&gt;&
 *&lt;&lt;linkreplace &quot;Comfort&quot;&gt;&gt;Comfort&lt;&lt;set $comfort to true&gt;&gt;&lt;&lt;set _shelter++&gt;&gt;&lt;&lt;replace &quot;#shelter&quot;&gt;&gt;&lt;&lt;print _shelter&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;if _shelter gte 4&gt;&gt;&lt;&lt;goto &quot;make shelter&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 *&lt;&lt;linkreplace &quot;Looks&quot;&gt;&gt;Looks&lt;&lt;set $looks to true&gt;&gt;&lt;&lt;set _shelter++&gt;&gt;&lt;&lt;replace &quot;#shelter&quot;&gt;&gt;&lt;&lt;print _shelter&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;if _shelter gte 4&gt;&gt;&lt;&lt;goto &quot;make shelter&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="196" name="make shelter" tags="" position="5643,7708" size="100,100">You picked
+</tw-passagedata><tw-passagedata pid="195" name="make shelter" tags="" position="5643,7708" size="100,100">You picked
 
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $wind is true&gt;&gt;&lt;&lt;print &quot;Windproof&quot;&gt;&gt;&lt;br&gt;&lt;&lt;/if&gt;&gt;
@@ -2035,7 +2035,7 @@ Are you sure?
 &lt;&lt;if $waterproof is true&gt;&gt; &lt;&lt;set $finalshelter +=1&gt;&gt; &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $dangers is true&gt;&gt; &lt;&lt;set $finalshelter +=1&gt;&gt; &lt;&lt;/if&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="197" name="build shelter" tags="" position="5401,7895" size="100,100">&lt;&lt;nobr&gt;&gt;
+</tw-passagedata><tw-passagedata pid="196" name="build shelter" tags="" position="5401,7895" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $wind is true&gt;&gt;&lt;&lt;print &quot;Making the shelter windproof is a great way to keep the shelter warm&quot;&gt;&gt;&lt;br&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $ground is true&gt;&gt;&lt;&lt;print &quot;Adding insulation to the flooring is a good way to maintain body heat while sleeping &quot;&gt;&gt;&lt;br&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $waterproof is true&gt;&gt;&lt;&lt;print &quot;A waterproof shelter will keep the rain out in bad weather keeping you dry&quot;&gt;&gt;&lt;br&gt;&lt;&lt;/if&gt;&gt;
@@ -2049,39 +2049,39 @@ Are you sure?
 &lt;&lt;elseif $finalshelter is 3 &gt;&gt; [[Build Shelter|Shelter2]]
 &lt;&lt;elseif $finalshelter is 2 &gt;&gt; [[Build Shelter|Shelter3]]
 &lt;&lt;elseif $finalshelter is 1 &gt;&gt; [[Build Shelter|Shelter4]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="198" name="Sleep1" tags="" position="4665,8132" size="100,100">&lt;&lt;if $fire is true&gt;&gt; You settle down in front of the fire thinking about your current adventures. You cant wait to make it back to camp and tell everybody. As the fire starts to die down you decide to enter the shelter for the night. Its nice and warm inside, you cant feel the wind at all. You soon drift off to [[sleep|Night1]]. 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="197" name="Sleep1" tags="" position="4665,8132" size="100,100">&lt;&lt;if $fire is true&gt;&gt; You settle down in front of the fire thinking about your current adventures. You cant wait to make it back to camp and tell everybody. As the fire starts to die down you decide to enter the shelter for the night. Its nice and warm inside, you cant feel the wind at all. You soon drift off to [[sleep|Night1]]. 
 &lt;&lt;set $health +=40&gt;&gt;
 &lt;&lt;elseif $fire is false&gt;&gt; Its a pity you couldn&#39;t have a fire going but you settle inside your shelter as best you can. Its actually quite warm inside, you lie there thinking about your adventures so far. Not long after you start to drift off to [[Sleep|Night1]]
 &lt;&lt;set $health +=20&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="199" name="Sleep2" tags="" position="5060,8134" size="100,100">&lt;&lt;if $fire is true&gt;&gt; You settle down in front of the fire thinking about your current adventures. You cant wait to make it back to camp and tell everybody. As the fire starts to die down you decide to enter the shelter for the night. Its nice and warm inside, There isnt alot you could of done to improve it, you soon drift off to [[sleep|Night2]] 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="198" name="Sleep2" tags="" position="5060,8134" size="100,100">&lt;&lt;if $fire is true&gt;&gt; You settle down in front of the fire thinking about your current adventures. You cant wait to make it back to camp and tell everybody. As the fire starts to die down you decide to enter the shelter for the night. Its nice and warm inside, There isnt alot you could of done to improve it, you soon drift off to [[sleep|Night2]] 
 &lt;&lt;set $health +=30&gt;&gt;
 &lt;&lt;elseif $fire is false&gt;&gt; Its a pity you couldn&#39;t have a fire going but you settle inside your shelter as best you can. Its actually quite warm inside, you lie there thinking about your adventures so far. Not long after you start to drift off to [[sleep|Night2]] 
 &lt;&lt;set $health +=15&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="200" name="Sleep3" tags="" position="5730,8115" size="100,100">&lt;&lt;if $fire is true&gt;&gt; You settle down in front of the fire thinking about your current adventures. You cant wait to make it back to camp and tell everybody. As the fire starts to die down you decide to enter the shelter for the night. It provides some warmth buy there are a few gaps that is letting the wind in. If it rains your going to get a bit wet. You try to [[Sleep|Night3]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="199" name="Sleep3" tags="" position="5730,8115" size="100,100">&lt;&lt;if $fire is true&gt;&gt; You settle down in front of the fire thinking about your current adventures. You cant wait to make it back to camp and tell everybody. As the fire starts to die down you decide to enter the shelter for the night. It provides some warmth buy there are a few gaps that is letting the wind in. If it rains your going to get a bit wet. You try to [[Sleep|Night3]]
 &lt;&lt;elseif $fire is false&gt;&gt; Its a pity you couldn&#39;t have a fire going but you settle inside your shelter as best you can. Its very cold inside as you dont have any warmth from a fire to help. You can feel the wind going through the shelter. Hopfully it doesnt get any worse. You try to [[Sleep|Night3]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="201" name="Sleep4" tags="" position="6074,8134" size="100,100">&lt;&lt;if $fire is true&gt;&gt; You settle down in front of the fire thinking about your current adventures. You cant wait to make it back to camp and tell everybody. As the fire starts to die down you decide to enter the shelter for the night. Your very carefull getting in as it doesnt look very sturdy. If you knock it the it may fall. You can feel the wind pass through the shelter, Thats due to the fact you didnt finish the walls and that its more like a fence then a wall. Hopefully the weather isnt too bad tonight. You go to sleep worrying about the night. You dont think you will be able to [[Sleep|Night4]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="200" name="Sleep4" tags="" position="6074,8134" size="100,100">&lt;&lt;if $fire is true&gt;&gt; You settle down in front of the fire thinking about your current adventures. You cant wait to make it back to camp and tell everybody. As the fire starts to die down you decide to enter the shelter for the night. Your very carefull getting in as it doesnt look very sturdy. If you knock it the it may fall. You can feel the wind pass through the shelter, Thats due to the fact you didnt finish the walls and that its more like a fence then a wall. Hopefully the weather isnt too bad tonight. You go to sleep worrying about the night. You dont think you will be able to [[Sleep|Night4]]
 &lt;&lt;elseif $fire is false&gt;&gt; Its a pity you couldn&#39;t have a fire going but you settle inside your shelter as best you can being carefull not to knock it over.You can feel the wind pass through the shelter, Thats due to the fact that its possibly the worst shelter possible. Hopefully the weather isnt too bad tonight. You go to sleep worrying about the night. You dont think you will be able to but eventually you go to [[Sleep|Night4]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="202" name="Night1" tags="" position="4662,8284" size="100,100">You sleep fine all night. At one point you think you may of heard a strange sound but you felt safe and secure in your shelter.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="201" name="Night1" tags="" position="4662,8284" size="100,100">You sleep fine all night. At one point you think you may of heard a strange sound but you felt safe and secure in your shelter.
 
-You wake up feeling more refreshed than you thought you would and your ready to [[continue your journey]].</tw-passagedata><tw-passagedata pid="203" name="Night2" tags="" position="5060,8284" size="100,100">You fall asleep quite quickly however your woken by a strange sound.
+You wake up feeling more refreshed than you thought you would and your ready to [[continue your journey]].</tw-passagedata><tw-passagedata pid="202" name="Night2" tags="" position="5060,8284" size="100,100">You fall asleep quite quickly however your woken by a strange sound.
 &lt;&lt;audio fox play&gt;&gt;
 
 Your suddenly wide awake, what was the sound? Is it getting closer, your not sure. What do you want to do?
 
 [[Stay put]]
-[[Look outside|look3]]</tw-passagedata><tw-passagedata pid="204" name="Night3" tags="" position="5730,8265" size="100,100">@@.delayed; Your fast asleep when you hear a strange sound .@@
+[[Look outside|look3]]</tw-passagedata><tw-passagedata pid="203" name="Night3" tags="" position="5730,8265" size="100,100">@@.delayed; Your fast asleep when you hear a strange sound .@@
 &lt;&lt;audio fox play&gt;&gt;
 
 @@.delayed;Your suddenly wide awake, what was the sound? Is it getting closer, your not sure. What do you want to do? .@@
 
 @@.delayed;[[Stay inside|Stay Put 4]] .@@
-@@.delayed;[[Look outside|look4]] .@@</tw-passagedata><tw-passagedata pid="205" name="Night4" tags="" position="6074,8284" size="100,100">@@.delayed; Your fast asleep when you hear a strange sound .@@
+@@.delayed;[[Look outside|look4]] .@@</tw-passagedata><tw-passagedata pid="204" name="Night4" tags="" position="6074,8284" size="100,100">@@.delayed; Your fast asleep when you hear a strange sound .@@
 &lt;&lt;audio fox play&gt;&gt;
 
 @@.delayed;Your suddenly wide awake, what was the sound? Is it getting closer, your not sure. What do you want to do? .@@
 
 @@.delayed;[[Stay inside|Stay Put 5]] .@@
-@@.delayed;[[Look outside|look5]] .@@</tw-passagedata><tw-passagedata pid="206" name="continue your journey" tags="" position="5352,9024" size="200,100">You continue along the Forrest path heading deeper into the trees. Suddenly you come out into an opening.
+@@.delayed;[[Look outside|look5]] .@@</tw-passagedata><tw-passagedata pid="205" name="continue your journey" tags="" position="5352,9024" size="200,100">You continue along the Forrest path heading deeper into the trees. Suddenly you come out into an opening.
 
 There is a split in the path but both seem to be overgrown by plants, You cant go around as the trees make this almost impossible. Both paths seem to angle around a small pond and meet up on the other side. The left path seems to be the shortest with the least amount of plants.
 
@@ -2095,7 +2095,7 @@ You have choice to make, go left or go right?
 [[Go left]]
 [[Go Right]]
 
-&lt;&lt;audio horror stop&gt;&gt;</tw-passagedata><tw-passagedata pid="207" name="Stay put" tags="" position="4804,8539" size="100,100">You decide to stay where you are. 
+&lt;&lt;audio horror stop&gt;&gt;</tw-passagedata><tw-passagedata pid="206" name="Stay put" tags="" position="4804,8539" size="100,100">You decide to stay where you are. 
 
 After a few minutes the noise goes away to be replaced by silence.
 
@@ -2107,7 +2107,7 @@ You wake up in the morning having forgotton all about the noises in the night.
 
 Now its time to [[continue your journey]] 
 
-</tw-passagedata><tw-passagedata pid="208" name="look3" tags="" position="5298,8382" size="100,100">&lt;&lt;audio fox stop&gt;&gt;
+</tw-passagedata><tw-passagedata pid="207" name="look3" tags="" position="5298,8382" size="100,100">&lt;&lt;audio fox stop&gt;&gt;
 &lt;&lt;audio horror play&gt;&gt;
 
 &lt;&lt;if $fire is true&gt;&gt; 
@@ -2154,26 +2154,26 @@ Now its time to [[continue your journey]]
 @@.delayed; for dawn to you can continue on .@@
 @@.delayed; You soon fall asleep .@@
 @@.delayed;  [[continue your journey]] .@@
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="209" name="Shelter1" tags="" position="4663,7997" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; You use all the tools in your bag to create a briliant shelter. You use the rope to help support the structure. It looks great and should keep you warm and dry during the night.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="208" name="Shelter1" tags="" position="4663,7997" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; You use all the tools in your bag to create a briliant shelter. You use the rope to help support the structure. It looks great and should keep you warm and dry during the night.
 
 Your a bit tired after building the shelter. Its time to [[rest|Sleep1]]
 &lt;&lt;elseif $Rope is false&gt;&gt; You create a brilliant shelter to spend the night in. It should keep you warm and dry during the night.
 
 Your a bit tired after building the shelter. Its time to [[rest|Sleep1]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="210" name="Shelter2" tags="" position="5058,7998" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; You use all the tools in your bag to create a good shelter. You use the rope to help support the structure. It looks great hopefully keep you warm and dry during the night.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="209" name="Shelter2" tags="" position="5058,7998" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; You use all the tools in your bag to create a good shelter. You use the rope to help support the structure. It looks great hopefully keep you warm and dry during the night.
 
 Your a bit tired after building the shelter. Its time to [[rest|Sleep2]]
 &lt;&lt;elseif $Rope is false&gt;&gt; You create a good shelter to spend the night in. hopefully it keeps you warm and dry during the night.
 
 Your a bit tired after building the shelter. Its time to [[rest|Sleep2]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="211" name="Shelter3" tags="" position="5728,7980" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; You know you have a rope so you decide to use that to help make your shelter. It helps add strengh but its not the best to be honest. Hopefully the night isnt too bad.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="210" name="Shelter3" tags="" position="5728,7980" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; You know you have a rope so you decide to use that to help make your shelter. It helps add strengh but its not the best to be honest. Hopefully the night isnt too bad.
 
 Your a bit tired after building the shelter. Its time to [[rest|Sleep3]]
 &lt;&lt;elseif $Rope is false&gt;&gt; No tools in your bag that could help and little idea of the priorties on shelter building you complete your structure, step back to have a look and wonder why you bothered. You don&#39;t have time to remake it and your now tired after building the shelter. Its time to [[rest|Sleep3]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="212" name="Shelter4" tags="" position="6071,7998" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; What have you done. Your shelter isnt fit for purpose. The only saving grace is that you used the rope to help keep it upright except a strong breeze might knock it down.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="211" name="Shelter4" tags="" position="6071,7998" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; What have you done. Your shelter isnt fit for purpose. The only saving grace is that you used the rope to help keep it upright except a strong breeze might knock it down.
 Nothing to do now. You did your best its time to [[rest|Sleep4]]
 &lt;&lt;elseif $Rope is false&gt;&gt; You were sucessfull only in creating a large pile of branches. You may be able to crawl in for some shelter ffrom the elements but its doubtfull. [[rest|Sleep4]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="213" name="Stay Put 4" tags="" position="5594,8412" size="100,100">You decide to stay where you are. 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="212" name="Stay Put 4" tags="" position="5594,8412" size="100,100">You decide to stay where you are. 
 
 After a few minutes the noise goes away to be replaced by silence.
 
@@ -2181,7 +2181,7 @@ You feel shaken but you trust the shelter to hide you from any preditors.
 
 You decide to go back to sleep.
 
-[[suddenly|wind1]] </tw-passagedata><tw-passagedata pid="214" name="look4" tags="" position="5805,8415" size="100,100">&lt;&lt;audio fox stop&gt;&gt;
+[[suddenly|wind1]] </tw-passagedata><tw-passagedata pid="213" name="look4" tags="" position="5805,8415" size="100,100">&lt;&lt;audio fox stop&gt;&gt;
 &lt;&lt;audio horror play&gt;&gt;
 
 &lt;&lt;if $fire is true&gt;&gt; 
@@ -2228,7 +2228,7 @@ You decide to go back to sleep.
 @@.delayed; for dawn to you can continue on .@@
 @@.delayed; You soon fall asleep .@@
 @@.delayed;  [[Suddenly|wind1]] .@@
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="215" name="wind1" tags="" position="5863,8593" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; Your woken up by a strong wind ripping through the shelter. Your freezing but due to the rope in the structure it thankfully doesnt fall down. You spend the rest of the night shivering in the cold.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="214" name="wind1" tags="" position="5863,8593" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; Your woken up by a strong wind ripping through the shelter. Your freezing but due to the rope in the structure it thankfully doesnt fall down. You spend the rest of the night shivering in the cold.
 At dawn the wind dies down. You leave the shelter tired but alive. Its time to [[continue your journey]] 
 &lt;&lt;elseif $Rope is false and $Clothes is true&gt;&gt; Your woken up by a strong wind ripping through the shelter. Your freezing cold with the wind chill when suddenly the worse happens. The shelter collapses all around you. You are now exposed to all the elements. You quicky get up and look for any cover possible. You spot a large tree and quickly move behind it, out of the wind. Its still cold but your atleast out of the wind. You spend a long night waiting for daylight so you can at least continue and start to warm up.
 Finally dawn comes and you decide to [[continue your journey]] 
@@ -2244,7 +2244,7 @@ You die during the night of exposure.
 &lt;&lt;set $health to 0&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-&lt;&lt;audio horror stop&gt;&gt;</tw-passagedata><tw-passagedata pid="216" name="Stay Put 5" tags="" position="5999,8434" size="100,100">You decide to stay where you are. 
+&lt;&lt;audio horror stop&gt;&gt;</tw-passagedata><tw-passagedata pid="215" name="Stay Put 5" tags="" position="5999,8434" size="100,100">You decide to stay where you are. 
 
 After a few minutes the noise goes away to be replaced by silence.
 
@@ -2252,7 +2252,7 @@ You feel shaken but you trust the shelter to hide you from any preditors.
 
 You decide to go back to sleep.
 
-[[suddenly|wind2]] </tw-passagedata><tw-passagedata pid="217" name="look5" tags="" position="6195,8424" size="100,100">&lt;&lt;audio fox stop&gt;&gt;
+[[suddenly|wind2]] </tw-passagedata><tw-passagedata pid="216" name="look5" tags="" position="6195,8424" size="100,100">&lt;&lt;audio fox stop&gt;&gt;
 &lt;&lt;audio horror play&gt;&gt;
 
 &lt;&lt;if $fire is true&gt;&gt; 
@@ -2299,7 +2299,7 @@ You decide to go back to sleep.
 @@.delayed; for dawn to you can continue on .@@
 @@.delayed; You soon fall asleep .@@
 @@.delayed;  [[Suddenly|wind2]] .@@
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="218" name="wind2" tags="" position="6320,8599" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; Your woken up by a strong wind ripping through the shelter. Your freezing but due to the rope in the structure it thankfully doesnt fall down. the wind is howling through the shelter. You dont know how your going to make it through the night when suddenly the [[worst happens]].
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="217" name="wind2" tags="" position="6320,8599" size="100,100">&lt;&lt;if $Rope is true&gt;&gt; Your woken up by a strong wind ripping through the shelter. Your freezing but due to the rope in the structure it thankfully doesnt fall down. the wind is howling through the shelter. You dont know how your going to make it through the night when suddenly the [[worst happens]].
 &lt;&lt;elseif $Rope is false and $Clothes is true&gt;&gt; Your woken up by a strong wind ripping through the shelter. Your freezing cold with the wind chill when suddenly the worse happens. The shelter collapses all around you. You are now exposed to all the elements. You quicky get up and look for any cover possible. You spot a large tree and quickly move behind it, out of the wind. Its still cold but your atleast out of the wind. Your not sure how this could get much worse when suddenly the [[worst happens]]
 &lt;&lt;elseif $Rope is false and $clothes is false&gt;&gt; Your woken by a strong wind ripping through the shelter. Your freezing cold with the wind chill when suddenly the worse happens. The shelter collapses all around you. Your now exposed to all the elements. You quickly get up and look for any shelter. Your only hope is a large upturned tree. You run over and take cover behind it. Its not much but hopefully its enough.
 Your shivering but you feel tired. You slowly fall asleep.
@@ -2312,7 +2312,7 @@ You die during the night of exposure.
 &lt;&lt;set $health to 0&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-&lt;&lt;audio horror stop&gt;&gt;</tw-passagedata><tw-passagedata pid="219" name="worst happens" tags="" position="6051,8711" size="100,100">&lt;&lt;if $Clothes is true&gt;&gt; The heavens seem to open up. The shelter your in while still up sems to channel all the water directly on to you. Your soaked to the skin, cold and shivering, You have no option but to get out. You scramble out of the shelter that collapses as you leve and you look around at your options. You see a slight shelter under one of the larger trees. Its your only hope. 
+&lt;&lt;audio horror stop&gt;&gt;</tw-passagedata><tw-passagedata pid="218" name="worst happens" tags="" position="6051,8711" size="100,100">&lt;&lt;if $Clothes is true&gt;&gt; The heavens seem to open up. The shelter your in while still up sems to channel all the water directly on to you. Your soaked to the skin, cold and shivering, You have no option but to get out. You scramble out of the shelter that collapses as you leve and you look around at your options. You see a slight shelter under one of the larger trees. Its your only hope. 
 You run over and huddle underneath. Its not perfect but its better than what you made. You spend the rest of the night shivering in the rain,
 &lt;img src=&quot;img/thunder.png&quot; alt=&quot;thunder&quot; /&gt;
 &lt;&lt;audio thunder play&gt;&gt;
@@ -2327,10 +2327,10 @@ You die during the night due to exposure.
 &lt;&lt;audio thunder play&gt;&gt;
 
 [[Rewind|Restart]] 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="220" name="food" tags="" position="6051,8861" size="100,100">&lt;&lt;if $Food is true&gt;&gt; You grab the food from your bag. It adds much needed nourishment. You get up and are ready to [[continue your journey]] 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="219" name="food" tags="" position="6051,8861" size="100,100">&lt;&lt;if $Food is true&gt;&gt; You grab the food from your bag. It adds much needed nourishment. You get up and are ready to [[continue your journey]] 
 &lt;&lt;set $health to 15&gt;&gt;
 &lt;&lt;elseif $Food is false&gt;&gt; You check your bag in the hope you had some food. You find none and remember that you didnt pick any up. Your starving, cold and tired. You have no option but to [[continue your journey]] 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="221" name="Map" tags="" position="9062,4593" size="100,100">You decide to check the map
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="220" name="Map" tags="" position="9062,4593" size="100,100">You decide to check the map
 
 &lt;img src=&quot;img/map.png&quot; alt=&quot;map&quot; style=&quot; width: 500px; height: 500px&quot;/&gt;
 
@@ -2342,7 +2342,7 @@ There is also a sign in from of you.
 Which way do you want to head?
 
 [[Camp Juniper]] 
-[[Camp Jupiter]] </tw-passagedata><tw-passagedata pid="222" name="Camp Juniper" tags="" position="8467,4926" size="100,100">You decide to head towards Camp Juniper, your sure thats where you were staying.
+[[Camp Jupiter]] </tw-passagedata><tw-passagedata pid="221" name="Camp Juniper" tags="" position="8467,4926" size="100,100">You decide to head towards Camp Juniper, your sure thats where you were staying.
 
 Straight away your not sure as you come to another split in the path.
 
@@ -2355,7 +2355,7 @@ This time there isn&#39;t any signs to help guide you.
 [[Go straight]]
 [[Turn left|left hills]]
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="223" name="Camp Jupiter" tags="" position="8255,4596" size="100,100">You decide to head to Camp Jupiter, Your sure thats where you have been camping.
+</tw-passagedata><tw-passagedata pid="222" name="Camp Jupiter" tags="" position="8255,4596" size="100,100">You decide to head to Camp Jupiter, Your sure thats where you have been camping.
 
 You walk down the path, across an old dried out riverbed. You come to some hills but the path goes around them luckily.
 
@@ -2364,17 +2364,17 @@ You keep walking, the path seems to go on forever. You begin to worry that you p
 Do you want to turn around?
 
 [[yes|second crossroad]] 
-[[no I know what I am doing]]</tw-passagedata><tw-passagedata pid="224" name="Go straight" tags="" position="8467,6754" size="100,100">You follow the path and come to another crossroads.
+[[no I know what I am doing]]</tw-passagedata><tw-passagedata pid="223" name="Go straight" tags="" position="8467,6754" size="100,100">You follow the path and come to another crossroads.
 
 You can turn right and enter thre forrest or you can continue on the path.
 
 [[Turn Right|enter forrest]]
-[[Continue on|Camp1]]</tw-passagedata><tw-passagedata pid="225" name="left hills" tags="" position="8857,4993" size="100,100">&lt;&lt;if $Map is true&gt;&gt; Even though you know its a harder more difficult route your feeling confident in your abilities now. You go for the harder route.
+[[Continue on|Camp1]]</tw-passagedata><tw-passagedata pid="224" name="left hills" tags="" position="8857,4993" size="100,100">&lt;&lt;if $Map is true&gt;&gt; Even though you know its a harder more difficult route your feeling confident in your abilities now. You go for the harder route.
 Your the kind of person who heads towards dangers. Well your committed now. Time to see if you survive the hills.
 [[start walking]]
 &lt;&lt;elseif $Map is false&gt;&gt; You decide to go left towards the hills, without a map your not sure which was the correct way however you didn&#39;t want to risk getting lost in the woods.
 [[start walking]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="226" name="start walking" tags="" position="8857,5143" size="100,100">You start walking along the path, its hard going but at least it isnt a Mountain.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="225" name="start walking" tags="" position="8857,5143" size="100,100">You start walking along the path, its hard going but at least it isnt a Mountain.
 
 When you get to the top the view is spectacular. There is a bird purched on a pole in front of you.
 
@@ -2387,15 +2387,15 @@ This is what the bird says
 You have come to the lost hills of Juniper, Now your here your only option is to Enter the Maze.
 
 Are you ready to [[start]] 
-</tw-passagedata><tw-passagedata pid="227" name="no I know what I am doing" tags="" position="8255,4746" size="100,100">You continue on this long path. You have been walking for hours and still no sign of Camp Jupiter.
+</tw-passagedata><tw-passagedata pid="226" name="no I know what I am doing" tags="" position="8255,4746" size="100,100">You continue on this long path. You have been walking for hours and still no sign of Camp Jupiter.
 
-[[Then all off a sudden]]</tw-passagedata><tw-passagedata pid="228" name="Then all off a sudden" tags="" position="8255,4896" size="100,100">&lt;img src=&quot;img/ufo.gif&quot; alt=&quot;ufo&quot;/&gt;
+[[Then all off a sudden]]</tw-passagedata><tw-passagedata pid="227" name="Then all off a sudden" tags="" position="8255,4896" size="100,100">&lt;img src=&quot;img/ufo.gif&quot; alt=&quot;ufo&quot;/&gt;
 
 &lt;&lt;audio ufo play&gt;&gt;
 
 A large UFO glides into view above you. Your surrounded by light and lifted up into the spaceship. You see nothing on the inside of thew ship just an strange silver glow.
 
-Your in a large room all by your self, There is nothing here except a [[Leaflet]]</tw-passagedata><tw-passagedata pid="229" name="Leaflet" tags="" position="8255,5046" size="100,100">You pick up the leaflet and it has a photo of an alien on it along with some text you cant make out.
+Your in a large room all by your self, There is nothing here except a [[Leaflet]]</tw-passagedata><tw-passagedata pid="228" name="Leaflet" tags="" position="8255,5046" size="100,100">You pick up the leaflet and it has a photo of an alien on it along with some text you cant make out.
 
 &lt;img src=&quot;img/alien.png&quot; alt=&quot;alien&quot;/&gt;
 
@@ -2407,9 +2407,9 @@ Welcome to Camp Jupiter, Its out of this world.
 The only place in the Galaxy where everyone is invited and nobody is excluded. 
 
 
-[[put leaflet down]]</tw-passagedata><tw-passagedata pid="230" name="put leaflet down" tags="" position="8255,5196" size="100,100">You put the leaflet down and lool around again. You now can see a window in front of you.
+[[put leaflet down]]</tw-passagedata><tw-passagedata pid="229" name="put leaflet down" tags="" position="8255,5196" size="100,100">You put the leaflet down and lool around again. You now can see a window in front of you.
 
-[[look out the window]]</tw-passagedata><tw-passagedata pid="231" name="look out the window" tags="" position="8255,5346" size="100,100">&lt;img src=&quot;img/jupiter.png&quot; alt=&quot;jupiter&quot;/&gt;
+[[look out the window]]</tw-passagedata><tw-passagedata pid="230" name="look out the window" tags="" position="8255,5346" size="100,100">&lt;img src=&quot;img/jupiter.png&quot; alt=&quot;jupiter&quot;/&gt;
 
 You have arrived at Camp Jupiter.
 
@@ -2422,7 +2422,7 @@ You now have the oppertunity to take scouting into the galaxy.
 [[End Game]]
 [[Restart and go back|Sleep]] 
 
-&lt;&lt;set $life +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="232" name="End Game" tags="" position="7809,6704" size="100,100">This game was created by Mark Walters from 1st Shiremoor Scouts as a game for his Cub group to play via Zoom. Please feel free to share with other Scout Groups or Youth Organisations who you feel may enjoy/learn from the game.
+&lt;&lt;set $life +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="231" name="End Game" tags="" position="7809,6704" size="100,100">This game was created by Mark Walters from 1st Shiremoor Scouts as a game for his Cub group to play via Zoom. Please feel free to share with other Scout Groups or Youth Organisations who you feel may enjoy/learn from the game.
 
 The artwork used in the surviving screen was created by members of 1st Shiremoor Cub Scout group.
 
@@ -2444,7 +2444,7 @@ The story is complete fiction, I used no external sources for the story or choic
 
 Please send feedback to 
 
-mark.walters@1stshiremoorscoutgroup.org.uk</tw-passagedata><tw-passagedata pid="233" name="start" tags="" position="8857,5293" size="100,100">&lt;&lt;if $Map is true&gt;&gt;A fog suddenly surrounds you, You can see nothing. 
+mark.walters@1stshiremoorscoutgroup.org.uk</tw-passagedata><tw-passagedata pid="232" name="start" tags="" position="8857,5293" size="100,100">&lt;&lt;if $Map is true&gt;&gt;A fog suddenly surrounds you, You can see nothing. 
 
 You hear the birds voice in your head again, saying 
 &quot;You have entered the Maze. There is only 1 way out. If you spend too long in the Maze you will die, perhaps this will teach you to read a map or to sometimes take the easy path.
@@ -2470,7 +2470,7 @@ The only direction you can travel is forwards
 &lt;&lt;/if&gt;&gt;
 
 
-&lt;&lt;audio maze play&gt;&gt;</tw-passagedata><tw-passagedata pid="234" name="Hill 1" tags="" position="8537,5416" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+&lt;&lt;audio maze play&gt;&gt;</tw-passagedata><tw-passagedata pid="233" name="Hill 1" tags="" position="8537,5416" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2486,7 +2486,7 @@ You see nothing
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-1</tw-passagedata><tw-passagedata pid="235" name="Hill 2" tags="" position="8682,5416" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+1</tw-passagedata><tw-passagedata pid="234" name="Hill 2" tags="" position="8682,5416" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2505,7 +2505,7 @@ There is nothing here. You can only travel in 3 directions
 
 
 &lt;&lt;set $Maze +=1&gt;&gt;
-</tw-passagedata><tw-passagedata pid="236" name="Hill 3" tags="" position="8856,5414" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="235" name="Hill 3" tags="" position="8856,5414" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2527,7 +2527,7 @@ Your at the entrance to this mystical Maze. Which direction do you want to go?
 
 
 &lt;&lt;set $Maze +=1&gt;&gt;
-</tw-passagedata><tw-passagedata pid="237" name="Hill 4" tags="" position="9020,5410" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="236" name="Hill 4" tags="" position="9020,5410" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2543,7 +2543,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="238" name="Hill 5" tags="" position="9190,5416" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="237" name="Hill 5" tags="" position="9190,5416" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2559,7 +2559,7 @@ There is nothing here.
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="239" name="Hill 6" tags="" position="8535,5550" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="238" name="Hill 6" tags="" position="8535,5550" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2575,7 +2575,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="240" name="Hill 7" tags="" position="8677,5548" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="239" name="Hill 7" tags="" position="8677,5548" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2592,7 +2592,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="241" name="Hill 8" tags="" position="8842,5550" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="240" name="Hill 8" tags="" position="8842,5550" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2608,7 +2608,7 @@ You failed to make it off the hills
 [[West|Hill 7]]
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
-&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="242" name="Hill 9" tags="" position="9018,5543" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="241" name="Hill 9" tags="" position="9018,5543" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2624,7 +2624,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="243" name="Hill 10" tags="" position="9188,5550" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="242" name="Hill 10" tags="" position="9188,5550" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2645,7 +2645,7 @@ Time to go
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="244" name="Hill 11" tags="" position="8532,5686" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="243" name="Hill 11" tags="" position="8532,5686" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2660,7 +2660,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="245" name="Hill 12" tags="" position="8677,5686" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="244" name="Hill 12" tags="" position="8677,5686" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2676,7 +2676,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="246" name="Hill 13" tags="" position="8838,5686" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="245" name="Hill 13" tags="" position="8838,5686" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2692,7 +2692,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="247" name="Hill 14" tags="" position="9015,5680" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="246" name="Hill 14" tags="" position="9015,5680" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2711,7 +2711,7 @@ There are some bones on the floor
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="248" name="Hill 15" tags="" position="9185,5686" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="247" name="Hill 15" tags="" position="9185,5686" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2726,7 +2726,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="249" name="Hill 16" tags="" position="8530,5823" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="248" name="Hill 16" tags="" position="8530,5823" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2741,7 +2741,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="250" name="Hill 17" tags="" position="8675,5823" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="249" name="Hill 17" tags="" position="8675,5823" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2760,7 +2760,7 @@ There is a mummy in this room. Better not stay long
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="251" name="Hill 18" tags="" position="8837,5823" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="250" name="Hill 18" tags="" position="8837,5823" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2783,7 +2783,7 @@ This is the exit room, you need to navigate the signs to make it out.
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="252" name="Hill 19" tags="" position="9013,5816" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="251" name="Hill 19" tags="" position="9013,5816" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2799,7 +2799,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="253" name="Hill 20" tags="" position="9183,5823" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="252" name="Hill 20" tags="" position="9183,5823" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2814,7 +2814,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="254" name="Hill 21" tags="" position="8528,5955" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="253" name="Hill 21" tags="" position="8528,5955" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2829,7 +2829,7 @@ You failed to make it off the hills
 
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="255" name="Hill 22" tags="" position="8673,5955" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="254" name="Hill 22" tags="" position="8673,5955" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2844,7 +2844,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="256" name="Hill 23" tags="" position="8835,5955" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="255" name="Hill 23" tags="" position="8835,5955" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2859,7 +2859,7 @@ You failed to make it off the hills
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze +=1&gt;&gt;
 
-&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="257" name="Hill 24" tags="" position="9012,5948" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+&lt;&lt;set $escape +=1&gt;&gt;</tw-passagedata><tw-passagedata pid="256" name="Hill 24" tags="" position="9012,5948" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2888,7 +2888,7 @@ There is nothing here.
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze to 0&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="258" name="Hill 25" tags="" position="9182,5955" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
+</tw-passagedata><tw-passagedata pid="257" name="Hill 25" tags="" position="9182,5955" size="100,100">&lt;&lt;if $Maze is 20&gt;&gt; You have failed to solve the Maze. You wander aimlessly untill your body gives up.
 You failed to make it off the hills
 
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
@@ -2909,9 +2909,9 @@ You come to another abandoned room.
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $Maze to 0&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="259" name="Camp1" tags="" position="8467,6904" size="100,100">You stick to the path.
+</tw-passagedata><tw-passagedata pid="258" name="Camp1" tags="" position="8467,6904" size="100,100">You stick to the path.
 
-Pretty soon you can actually see the [[camp|End Screen]] </tw-passagedata><tw-passagedata pid="260" name="enter forrest" tags="" position="7457,6348" size="100,100">You decide to enter the forrest.
+Pretty soon you can actually see the [[camp|End Screen]] </tw-passagedata><tw-passagedata pid="259" name="enter forrest" tags="" position="7457,6348" size="100,100">You decide to enter the forrest.
 You follow the Forrest path for about an hour, you think your nearly back at camp so you decide to start rushing, You leave the path in your haste without even realising it. You start to panic looking around to try find it again. You look but see nothing, The only clue you have is that one side of the forrest seems darker then the other. You decide to head towards the light.
 
 You walk for what feels like hours but is most likely around 30 minutes. Suddenly you stumble on the path again and follow it out of the forrest.
@@ -2920,7 +2920,7 @@ You come out into the entrance of a large valley that looks blocked from a recen
 
 [[Enter Forrest]] 
 
-&lt;&lt;set $valley to true&gt;&gt;</tw-passagedata><tw-passagedata pid="261" name="Go left" tags="" position="5027,9258" size="100,100">You decide to take the left path as its shorter and your sure its Cows Parsley.
+&lt;&lt;set $valley to true&gt;&gt;</tw-passagedata><tw-passagedata pid="260" name="Go left" tags="" position="5027,9258" size="100,100">You decide to take the left path as its shorter and your sure its Cows Parsley.
 
 You push your way through the plants, damaging some but not others. You get a little plant sap on your exposed body as you traverse the path.
 
@@ -2944,7 +2944,7 @@ Giant Hogweed is very dangerous and has lasting effects on the human body.
 &lt;&lt;set $health to 0&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="262" name="Go Right" tags="" position="5707,9262" size="100,100">You decide to take the right path. Your sure its the harmless Cow Parsley.
+</tw-passagedata><tw-passagedata pid="261" name="Go Right" tags="" position="5707,9262" size="100,100">You decide to take the right path. Your sure its the harmless Cow Parsley.
 
 You push your way through the plans, damaging some but not others. You quickly make it around the pond. You get some plant sap on you but it doesnt have any effect. You guessed right.
 
@@ -2956,19 +2956,19 @@ Which way to camp.
 
 
 [[Go Right to Camp Juniper|Camp12]]
-[[Go Left to Camp Jupiter|no I know what I am doing]]</tw-passagedata><tw-passagedata pid="263" name="examine left path first" tags="" position="5147,9035" size="100,100">&lt;img src=&quot;img/gianth.png&quot; alt=&quot;Giant Hogweed&quot; /&gt;
+[[Go Left to Camp Jupiter|no I know what I am doing]]</tw-passagedata><tw-passagedata pid="262" name="examine left path first" tags="" position="5147,9035" size="100,100">&lt;img src=&quot;img/gianth.png&quot; alt=&quot;Giant Hogweed&quot; /&gt;
 
 You look at the plants blocking the left path. Some of the plants are taller than you at around 5 meters in height and 2 meters wide.
 
 Looking closer you see purple splotches on the stems and course hairs at the base of the leaf stalks. Its also got quite a thick stem for a plant.
 
-[[Stop Looking|continue your journey]] </tw-passagedata><tw-passagedata pid="264" name="examine right path first" tags="" position="5628,9055" size="100,100">&lt;img src=&quot;img/cowp.png&quot; alt=&quot;Cow Parsley&quot; /&gt;
+[[Stop Looking|continue your journey]] </tw-passagedata><tw-passagedata pid="263" name="examine right path first" tags="" position="5628,9055" size="100,100">&lt;img src=&quot;img/cowp.png&quot; alt=&quot;Cow Parsley&quot; /&gt;
 
 You look at the plants on the right path. There seems to be allot but there not very tall. Only about 1 meter in height. 
 There are not many hairs on the stem and its quite thin.
 
 
-[[Stop Looking|continue your journey]] </tw-passagedata><tw-passagedata pid="265" name="Camp12" tags="" position="5812,9563" size="100,100">You turn right and walk surely it was Camp Juniper you stayed at. 
+[[Stop Looking|continue your journey]] </tw-passagedata><tw-passagedata pid="264" name="Camp12" tags="" position="5812,9563" size="100,100">You turn right and walk surely it was Camp Juniper you stayed at. 
 After about 20 mins of walking the camp is suddenly in front of you.
 
 You start to [[run|End Screen]]</tw-passagedata></tw-storydata>
