@@ -1023,15 +1023,16 @@ You have several options.
 [[Follow the path straight]]
 [[Take the first path turning right]]
 [[Take the second right]]
-[[Take the path going left]]</tw-passagedata><tw-passagedata pid="97" name="Mountain1 Right" tags="" position="5842,4694" size="100,100">You decide to take the right path, You follow the trail deeper into the mountains, Suddenly the trail ends and your still no where near traversing the mountain range. You must of chosen the wrong direction. Its getting colder now, the weather is turning and now that you have stopped all your body heat leaves you.
+[[Take the path going left]]</tw-passagedata><tw-passagedata pid="97" name="Mountain1 Right" tags="" position="5745.333333333333,4742.333333333333" size="100,100">You decide to take the right path, You follow the trail deeper into the mountains, Suddenly the trail ends and your still no where near traversing the mountain range. You must of chosen the wrong direction. Its getting colder now, the weather is turning and now that you have stopped all your body heat leaves you.
  
 &lt;&lt;if $Clothes is true&gt;&gt; &lt;&lt;set $health to 25&gt;&gt; You have to turn back, At worse you can head down one you get back to where you were. [[Head Back|clothes1]]
 &lt;&lt;elseif $Clothes is false&gt;&gt; &lt;&lt; &lt;&lt;set $health to 10&gt;&gt; You have to turn back, Your freezing as you didnt change your clothes before you set off. [[Head Back|noclothes1]]
 &lt;&lt;/if&gt;&gt;
  
- </tw-passagedata><tw-passagedata pid="98" name="clothes1" tags="" position="6003,4461" size="100,100">&lt;&lt;if $Food is true&gt;&gt; You start walking back your cold, tired and hungry. You quicky grab some food from your pack and eat while walking. Your energy levels improve and you make it back to the start. &lt;&lt;set $health to 40&gt;&gt;  You make it back to the where you were earlier and follow the trail in the other [[direction|mountain1 left]]. 
+ </tw-passagedata><tw-passagedata pid="98" name="clothes1" tags="" position="6113,4367.666666666667" size="100,100">&lt;&lt;if $Food is true&gt;&gt; You start walking back your cold, tired and hungry. You quicky grab some food from your pack and eat while walking. Your energy levels improve and you make it back to the start. &lt;&lt;set $health to 40&gt;&gt;  You make it back to the where you were earlier and follow the trail in the other [[direction|mountain1 left]]. 
 &lt;&lt;elseif $Food is false&gt;&gt; You start walking back your cold, tired and hungry. You dont have any food to eat. You make it back but your energy levels are dangerously low. You have 3 options, Take the [[left path|mountain1 left]], head back down the mountain to try the [[Mine]] or go back to the [[Path]] &lt;&lt;set $fail to true&gt;&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="99" name="noclothes1" tags="" position="5646,4534" size="100,100">&lt;&lt;if $Food is true&gt;&gt; You start walking back your cold, tired and hungry. You quicky grab some food from your pack and eat while walking. Your energy levels improve and you make it back to the start. &lt;&lt;set $health to 25&gt;&gt;
+[[Continue|Mountain]]
 &lt;&lt;elseif $Food is false&gt;&gt; You start walking back your cold, tired and hungry. You dont have any food to eat. You dont have the correct clothes for Mountain enviroments. You die from exposure
 &lt;img src=&quot;img/grim.png&quot; alt=&quot;Grim Reaper&quot; /&gt;
 
